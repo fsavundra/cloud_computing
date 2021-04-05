@@ -30,6 +30,9 @@ git clone https://github.com/fsavundra/cloud_computing
 # Create a new working directory
 cd cloud_computing
 
+# Docker Login
+sudo docker login
+
 # Build the doker image
 sudo docker build -t fsavundra/stock_app:v1 .
 	
@@ -41,9 +44,6 @@ sudo docker images
 
 # Tag docker image correctly
 sudo docker tag ac9895a6e7a4 fsavundra/stock_app:v1
-
-# Docker Login
-sudo docker login
 
 # Push image to registery
 sudo docker push fsavundra/stock_app:v1
