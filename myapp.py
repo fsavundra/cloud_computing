@@ -29,8 +29,8 @@ def api_information():
     # This function returns a HTML page with information on all the other APIs
     return """<html>
 <body>
-<h1>Investment Restful API Service</h1>
-<h3>Designed, developed and implemented by Shabnam Manjuri, Rafayet Tarafder, Rohit Garg, Helen Louise Gaden and Guy Hunt</h3>
+<h1>Stock Market Restful API Service</h1>
+<h3>Designed, developed and implemented by Tom Doyle, Christa Dobson, Freddie Savundra </h3>
 <b>Group: 11</b>
 <br></br>
 <br></br>
