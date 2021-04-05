@@ -31,7 +31,7 @@ def api_information():
 <body>
 <h1>Stock Market Restful API Service</h1>
 <h3>Designed, developed and implemented by Tom Doyle, Christa Dobson, Freddie Savundra </h3>
-<b>Group: 11</b>
+<b>Group: 34</b>
 <br></br>
 <br></br>
 <b>Get all the stocks</b>
