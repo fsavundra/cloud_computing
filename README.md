@@ -3,7 +3,7 @@
 The stock index restful api is used to obtain, store, update and delete information on stock market indexes.
 
 ## Authors
-Tom Doyle, Christa , Freddie Savundra
+Tom Doyle, Christa Dobson, Freddie Savundra
 
 ## File
 Within the repository you will find several other files:
