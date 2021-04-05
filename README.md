@@ -1,9 +1,9 @@
-# Investment Restful API Service
+# Stock Market API Service
 
 The stock index restful api is used to obtain, store, update and delete information on stock market indexes.
 
 ## Authors
-Shabnam Manjuri, Rafayet Tarafder, Rohit Garg, Helen Louise Gaden and Guy Hunt
+Tom Doyle, Christa , Freddie Savundra
 
 ## File
 Within the repository you will find several other files:
@@ -23,7 +23,7 @@ Within the repository you will find several other files:
     testFunctions.ipynb which contains python code to performance test the API
 
 ## Docker Hub
-Docker images can be found on this URL: https://hub.docker.com/r/guypwhunt1992/investment_app
+Docker images can be found on this URL: https://hub.docker.com/r/fsavundra/stock_app
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
