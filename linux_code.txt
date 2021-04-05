@@ -34,22 +34,22 @@ cd cloud_computing
 sudo docker login
 
 # Build the doker image
-sudo docker build -t fsavundra/stock_app:v1 .
+sudo docker build -t fsavundra/stock_app:v4 .
 	
 # Run the docker image
-sudo docker run -p 80:80 fsavundra/stock_app:v1
+sudo docker run -p 80:80 fsavundra/stock_app:v4
 
 # Find docker image id
 sudo docker images
 
 # Tag docker image correctly
-sudo docker tag 8193a633cb8c fsavundra/stock_app:v1
+sudo docker tag 3db7aa668d4d fsavundra/stock_app:v4
 
 # Push image to registery
-sudo docker push fsavundra/stock_app:v1
+sudo docker push fsavundra/stock_app:v4
 
 # Start the container from image
-sudo docker container run -d -it --name investment fsavundra/stock_app:v1
+sudo docker container run -d -it --name investment4 fsavundra/stock_app:v4
 
 # Install Kubernetes
 sudo apt update -y
@@ -61,14 +61,14 @@ sudo apt-get update
 sudo nano create-stockpod.yml
 
 # Add content to yaml file
-apiVersion: v1
+apiVersion: v4
 kind: Pod
 metadata:
-   name: stock-pod
+   name: stock-pod04
 spec:
    containers:
-   - name: stock-container01
-     image: fsavundra/stock_app:v1
+   - name: stock-container04
+     image: fsavundra/stock_app:v4
      ports:
      - containerPort: 6379
 
@@ -76,13 +76,13 @@ spec:
 sudo microk8s kubectl get all
 
 # Create a deployment
-sudo microk8s kubectl create deployment stock --image=fsavundra/stock_app:v1 --port=80
+sudo microk8s kubectl create deployment stock4 --image=fsavundra/stock_app:v4 --port=80
 
 # Create a load balancer
-sudo microk8s kubectl expose deployment stock --type=LoadBalancer --port 80 --target-port 80
+sudo microk8s kubectl expose deployment stock4 --type=LoadBalancer --port 80 --target-port 80
 
 # Scale the deployment
-sudo microk8s kubectl scale deployment stock --replicas=2
+sudo microk8s kubectl scale deployment stock4 --replicas=2
 
 # Delete statments if needed
 sudo microk8s kubectl delete deployment investment
