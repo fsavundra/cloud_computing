@@ -15,10 +15,10 @@ app = Flask(__name__)
 try:
     # Define the connection parameters for the SQL database
     mydb = mysql.connector.connect(
-    host="investment.cgwmqkwedlgo.us-east-1.rds.amazonaws.com",
-    user="Rafayet",
-    password="Cloud2021",
-    database="Invest"
+    host="music-db.caozbhwr6zij.us-east-1.rds.amazonaws.com",
+    user="music_maestro",
+    password="music2021",
+    database="music-db"
     )
 except:
     x=1
