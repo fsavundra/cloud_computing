@@ -43,7 +43,7 @@ sudo docker run -p 80:80 fsavundra/stock_app:v1
 sudo docker images
 
 # Tag docker image correctly
-sudo docker tag ac9895a6e7a4 fsavundra/stock_app:v1
+sudo docker tag 8193a633cb8c fsavundra/stock_app:v1
 
 # Push image to registery
 sudo docker push fsavundra/stock_app:v1
@@ -71,9 +71,6 @@ spec:
      image: fsavundra/stock_app:v1
      ports:
      - containerPort: 6379
-
-# Create POD from Manifest file
-# sudo microk8s kubectl create -f create-stockpod.yml
 
 # Check it is running
 sudo microk8s kubectl get all
